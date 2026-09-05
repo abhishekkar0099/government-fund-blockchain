@@ -1,0 +1,735 @@
+.citizen-transparency-notice {
+    width: 100%;
+    margin: 20px 0;
+    padding: 18px 22px;
+    background: #eef6ff;
+    border: 1px solid #c9def5;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.citizen-transparency-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #1f4f82;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.citizen-transparency-notice strong {
+    display: block;
+    color: #173f73;
+    font-size: 16px;
+}
+
+.citizen-transparency-notice p {
+    margin: 5px 0 0;
+    color: #5f6f82;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.qr-verification-card {
+    margin: 25px 0;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #dbe5f0;
+    border-radius: 15px;
+}
+
+.qr-verification-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.qr-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #1f4f82;
+}
+
+.qr-verification-card h3 {
+    margin: 7px 0;
+    font-size: 20px;
+}
+
+.qr-verification-card p {
+    max-width: 600px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.qr-project-id {
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+}
+
+.qr-code-wrapper {
+    padding: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+
+    .qr-verification-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .qr-code-wrapper {
+        align-self: center;
+    }
+}
+.qr-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.qr-action-button {
+    padding: 9px 13px;
+    border: 1px solid #1f4f82;
+    border-radius: 7px;
+    background: white;
+    color: #1f4f82;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.qr-action-button:hover {
+    background: #1f4f82;
+    color: white;
+}
+
+/* =========================================
+   EXPENSE DETAILS
+   ========================================= */
+
+.expense-panel {
+    width: 100%;
+    margin-top: 28px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.expense-item {
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #fafafa;
+}
+
+.expense-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.expense-item-header div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.expense-item-header strong {
+    font-size: 18px;
+}
+
+.expense-item-header span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.expense-amount {
+    font-size: 20px !important;
+}
+
+.expense-description {
+    margin-top: 18px;
+}
+
+.expense-description span,
+.expense-meta span,
+.expense-blockchain span {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.expense-description p {
+    margin: 0;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.expense-meta {
+    margin-top: 16px;
+}
+
+.expense-meta strong {
+    color: #111827;
+}
+
+
+/* =========================================
+   EVIDENCE
+   ========================================= */
+
+.expense-evidence {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.expense-evidence h4 {
+    margin: 0 0 14px;
+    font-size: 16px;
+}
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(180px, 1fr)
+    );
+    gap: 14px;
+}
+
+.evidence-image-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    aspect-ratio: 4 / 3;
+}
+
+.evidence-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.evidence-image-link:hover .evidence-image {
+    transform: scale(1.04);
+}
+
+.no-evidence {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.expense-blockchain {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.expense-blockchain code {
+    display: block;
+    word-break: break-all;
+    font-size: 12px;
+    color: #374151;
+}
+/* =========================================
+   EXPENSE HISTORY
+========================================= */
+
+.expense-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.expense-history-item {
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.expense-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.expense-history-header > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expense-history-header strong {
+    font-size: 17px;
+}
+
+.expense-history-header span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.expense-history-amount {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.expense-history-details {
+    margin-top: 14px;
+}
+
+.expense-history-details p {
+    margin: 7px 0;
+    color: #4b5563;
+}
+
+.expense-evidence {
+    margin-top: 18px;
+}
+
+.expense-evidence h4 {
+    margin-bottom: 10px;
+}
+
+.evidence-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.evidence-gallery a {
+    display: block;
+}
+
+.evidence-gallery img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.evidence-gallery img:hover {
+    transform: scale(1.04);
+}
+
+.expense-blockchain-info {
+    margin-top: 14px;
+    padding: 10px;
+    background: #f5f7fa;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expense-blockchain-info span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.expense-blockchain-info code {
+    font-size: 11px;
+    word-break: break-all;
+    color: #374151;
+}
+
+/* =========================================================
+   EXPENSE HISTORY
+   ========================================================= */
+
+.expense-history-section {
+    margin-top: 28px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+}
+
+.expense-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.expense-history-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.expense-history-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.expense-count-badge {
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* SUMMARY */
+
+.expense-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.expense-summary > div {
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.expense-summary span {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.expense-summary strong {
+    font-size: 18px;
+    color: #0f172a;
+}
+
+
+/* TOGGLE */
+
+.expense-history-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #334155;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.expense-history-toggle:hover {
+    background: #f8fafc;
+}
+
+
+/* LIST */
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+
+/* CARD */
+
+.expense-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 11px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.expense-card-header {
+    width: 100%;
+    border: none;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.expense-card-header:hover {
+    background: #f8fafc;
+}
+
+.expense-number {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.expense-card-main {
+    flex: 1;
+}
+
+.expense-card-main strong {
+    display: block;
+    font-size: 14px;
+    color: #0f172a;
+}
+
+.expense-card-main span {
+    display: block;
+    margin-top: 4px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.expense-card-amount {
+    font-size: 15px;
+    color: #0f172a;
+    white-space: nowrap;
+}
+
+.expense-arrow {
+    color: #64748b;
+}
+
+
+/* DETAILS */
+
+.expense-card-details {
+    padding: 18px;
+    border-top: 1px solid #e2e8f0;
+    background: #fafafa;
+}
+
+.expense-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.expense-info-grid > div {
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.expense-info-grid span {
+    display: block;
+    color: #64748b;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.expense-info-grid strong {
+    color: #1e293b;
+    font-size: 13px;
+}
+
+
+/* EVIDENCE */
+
+.expense-evidence {
+    margin-top: 18px;
+}
+
+.expense-evidence-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.expense-evidence-title strong {
+    font-size: 14px;
+    color: #0f172a;
+}
+
+.expense-evidence-title span {
+    padding: 5px 9px;
+    background: #f1f5f9;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.expense-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.expense-photo {
+    position: relative;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 9px;
+    display: block;
+    background: #e2e8f0;
+}
+
+.expense-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.expense-photo:hover img {
+    transform: scale(1.04);
+}
+
+.expense-photo span {
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    padding: 4px 7px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.no-expense-evidence {
+    padding: 15px;
+    text-align: center;
+    background: #f8fafc;
+    color: #64748b;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+
+/* BLOCKCHAIN */
+
+.expense-blockchain-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #dbeafe;
+}
+
+.expense-blockchain-status > span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #15803d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.expense-blockchain-status strong {
+    display: block;
+    font-size: 12px;
+    color: #334155;
+}
+
+.expense-blockchain-status p {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #64748b;
+}
+
+
+/* LOADING / EMPTY */
+
+.expense-message {
+    padding: 30px;
+    text-align: center;
+    color: #64748b;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .expense-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .expense-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expense-photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .expense-history-header {
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .expense-history-section {
+        padding: 16px;
+    }
+
+    .expense-card-header {
+        gap: 9px;
+        padding: 12px;
+    }
+
+    .expense-card-amount {
+        font-size: 13px;
+    }
+
+}

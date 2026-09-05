@@ -1,0 +1,554 @@
+.verify-page {
+    min-height: 100vh;
+    background: #f4f7fb;
+    color: #172b4d;
+    font-family: Arial, sans-serif;
+}
+
+.verify-header {
+    min-height: 72px;
+    padding: 0 5%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verify-brand {
+    font-size: 20px;
+    font-weight: 800;
+    color: #173f73;
+}
+
+.verify-header-subtitle {
+    margin-top: 4px;
+    color: #718096;
+    font-size: 12px;
+}
+
+.verify-secure-badge {
+    padding: 8px 13px;
+    border-radius: 20px;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.verify-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.verify-banner {
+    padding: 18px 22px;
+    border-radius: 12px;
+    background: #eef6ff;
+    border: 1px solid #c9def5;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.verify-check {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #1f4f82;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.verify-banner strong {
+    color: #173f73;
+}
+
+.verify-banner p {
+    margin: 4px 0 0;
+    color: #667085;
+    font-size: 13px;
+}
+
+.verify-card {
+    margin-bottom: 20px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+}
+
+.verify-card-label {
+    color: #1f4f82;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.verify-project-heading {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.verify-project-heading h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.verify-project-id {
+    margin-top: 7px;
+    color: #718096;
+    font-size: 13px;
+}
+
+.verify-description {
+    margin: 20px 0;
+    color: #5f6f82;
+    line-height: 1.6;
+}
+
+.verify-status {
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.verify-status-completed {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.verify-status-in_progress {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.verify-status-planned {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.verify-status-cancelled {
+    background: #fff1f2;
+    color: #be123c;
+}
+
+.verify-location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.verify-location-grid span,
+.verify-finance-card span {
+    display: block;
+    color: #718096;
+    font-size: 11px;
+}
+
+.verify-location-grid strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.verify-section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.verify-section-title h2 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.verify-section-title p {
+    margin: 5px 0 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+.verify-lock,
+.verify-count {
+    padding: 7px 11px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.verify-finance-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.verify-finance-card {
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.verify-finance-card strong {
+    display: block;
+    margin-top: 8px;
+    color: #173f73;
+    font-size: 18px;
+}
+
+.verify-progress {
+    margin-top: 25px;
+}
+
+.verify-progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.verify-progress-track {
+    height: 8px;
+    border-radius: 20px;
+    background: #e5e7eb;
+    overflow: hidden;
+}
+
+.verify-progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: #1f4f82;
+}
+
+.verify-blockchain-card {
+    margin-bottom: 20px;
+    padding: 25px;
+    background: #173f73;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.verify-blockchain-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.verify-blockchain-card span {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.verify-blockchain-card h2 {
+    margin: 6px 0;
+    font-size: 21px;
+}
+
+.verify-blockchain-card p {
+    margin: 0;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.verify-hash {
+    margin-top: 15px;
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+.verify-hash code {
+    display: block;
+    margin-top: 5px;
+    word-break: break-all;
+    font-family: monospace;
+}
+
+.verify-transactions {
+    margin-top: 25px;
+}
+
+.verify-transaction {
+    padding: 16px 0;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.verify-transaction-number {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #eef6ff;
+    color: #1f4f82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.verify-transaction-main {
+    flex: 1;
+}
+
+.verify-transaction-main strong {
+    display: block;
+    font-size: 14px;
+}
+
+.verify-transaction-main span {
+    display: block;
+    margin-top: 4px;
+    color: #718096;
+    font-size: 11px;
+}
+
+.verify-transaction-amount {
+    color: #173f73;
+    font-size: 15px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.verify-empty {
+    margin-top: 20px;
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 10px;
+    text-align: center;
+    color: #718096;
+}
+
+.verify-loading,
+.verify-error-card {
+    width: 90%;
+    max-width: 550px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.verify-spinner {
+    font-size: 40px;
+}
+
+.verify-error-icon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    background: #fff1f2;
+    color: #be123c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.verify-error-card p {
+    color: #718096;
+}
+
+.verify-back-button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1f4f82;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.verify-footer {
+    padding: 25px 0;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    color: #718096;
+    font-size: 11px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .verify-finance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .verify-location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .verify-project-heading {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .verify-header {
+        padding: 15px 5%;
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .verify-container {
+        width: 94%;
+    }
+
+    .verify-card {
+        padding: 20px;
+    }
+
+    .verify-finance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .verify-transaction {
+        align-items: flex-start;
+    }
+
+    .verify-transaction-amount {
+        font-size: 13px;
+    }
+
+    .verify-footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+.verify-expenses {
+    margin-top: 25px;
+}
+
+.verify-expense-card {
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.verify-expense-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.verify-expense-label {
+    color: #1f4f82;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.verify-expense-header h3 {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.verify-expense-header > strong {
+    color: #173f73;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.verify-expense-description {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.verify-expense-description span,
+.verify-expense-details span {
+    display: block;
+    color: #718096;
+    font-size: 10px;
+}
+
+.verify-expense-description p {
+    margin: 5px 0 0;
+    color: #374151;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.verify-expense-details {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.verify-expense-details strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.verify-expense-blockchain {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+    color: #047857;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.verify-expense-blockchain code {
+    display: block;
+    margin-top: 5px;
+    color: #667085;
+    font-size: 10px;
+    word-break: break-all;
+}
+
+@media (max-width: 700px) {
+
+    .verify-expense-header {
+        flex-direction: column;
+    }
+
+    .verify-expense-details {
+        grid-template-columns: 1fr;
+    }
+
+}

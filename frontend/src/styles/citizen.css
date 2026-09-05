@@ -1,0 +1,478 @@
+/* =========================================
+   CITIZEN DASHBOARD
+========================================= */
+
+.citizen-page {
+    min-height: 100vh;
+    background: #f4f7fb;
+    color: #172b4d;
+    font-family: Arial, sans-serif;
+}
+
+.citizen-header {
+    min-height: 72px;
+    padding: 0 5%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.citizen-brand {
+    font-size: 21px;
+    font-weight: 800;
+    color: #173f73;
+}
+
+.citizen-header-subtitle {
+    margin-top: 4px;
+    color: #718096;
+    font-size: 12px;
+}
+
+.citizen-user-area {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.citizen-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.citizen-user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #edf4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.citizen-user strong {
+    display: block;
+    font-size: 13px;
+}
+
+.citizen-user span:last-child {
+    display: block;
+    margin-top: 3px;
+    color: #718096;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.citizen-logout {
+    padding: 9px 16px;
+    border: 1px solid #dc3545;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #dc3545;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.citizen-logout:hover {
+    background: #dc3545;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.citizen-hero {
+    width: 90%;
+    max-width: 1250px;
+    margin: 30px auto 24px;
+    padding: 40px;
+    border-radius: 18px;
+    background: #1f4f82;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.citizen-hero-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.citizen-hero h1 {
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+.citizen-hero p {
+    max-width: 700px;
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.92;
+}
+
+.citizen-hero-icon {
+    font-size: 65px;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.citizen-stats {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.citizen-stat-card {
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+    box-sizing: border-box;
+}
+
+.citizen-stat-card span {
+    display: block;
+    color: #718096;
+    font-size: 12px;
+}
+
+.citizen-stat-card strong {
+    display: block;
+    margin-top: 8px;
+    color: #173f73;
+    font-size: 22px;
+}
+
+
+/* =========================================
+   PROJECT SECTION
+========================================= */
+
+.citizen-project-section {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.citizen-section-heading h2 {
+    margin-bottom: 5px;
+    color: #172b4d;
+    font-size: 25px;
+}
+
+.citizen-section-heading p {
+    margin-top: 0;
+    color: #718096;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.citizen-search {
+    margin: 20px 0;
+    padding: 13px 16px;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.citizen-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.citizen-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.citizen-project-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 22px;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.citizen-project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.citizen-project-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.citizen-project-id {
+    font-size: 11px;
+    font-weight: 800;
+    color: #1f4f82;
+}
+
+.citizen-project-card h3 {
+    margin: 6px 0 0;
+    font-size: 19px;
+    color: #172b4d;
+}
+
+.citizen-location {
+    margin: 15px 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.citizen-status {
+    height: fit-content;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.citizen-status-planned {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.citizen-status-in_progress {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.citizen-status-completed {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.citizen-status-cancelled {
+    background: #fff1f2;
+    color: #be123c;
+}
+
+
+/* =========================================
+   FUND GRID
+========================================= */
+
+.citizen-fund-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.citizen-fund-grid div {
+    padding: 14px 9px;
+}
+
+.citizen-fund-grid div:nth-child(odd) {
+    border-right: 1px solid #e5e7eb;
+}
+
+.citizen-fund-grid div:nth-child(-n+2) {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.citizen-fund-grid span {
+    display: block;
+    color: #718096;
+    font-size: 11px;
+}
+
+.citizen-fund-grid strong {
+    display: block;
+    margin-top: 5px;
+    color: #173f73;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.citizen-progress {
+    margin: 18px 0;
+}
+
+.citizen-progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    color: #718096;
+    font-size: 11px;
+}
+
+.citizen-progress-track {
+    height: 7px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #e5e7eb;
+}
+
+.citizen-progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    background: #1f4f82;
+}
+
+
+/* =========================================
+   VIEW BUTTON
+========================================= */
+
+.citizen-view-button {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #1f4f82;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.citizen-view-button:hover {
+    background: #173f73;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.citizen-message {
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    color: #718096;
+}
+
+.citizen-error {
+    padding: 15px;
+    border-radius: 9px;
+    background: #fff1f2;
+    color: #be123c;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.citizen-footer {
+    width: 90%;
+    max-width: 1250px;
+    margin: 40px auto 0;
+    padding: 25px 0;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    color: #718096;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .citizen-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .citizen-project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .citizen-header {
+        padding: 15px 5%;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .citizen-user-area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .citizen-hero {
+        padding: 25px;
+    }
+
+    .citizen-hero h1 {
+        font-size: 27px;
+    }
+
+    .citizen-hero-icon {
+        display: none;
+    }
+
+    .citizen-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .citizen-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .citizen-footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
