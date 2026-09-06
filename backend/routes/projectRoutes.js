@@ -569,29 +569,25 @@ router.get(
                         i
                     );
 
+transactions.push({
+    index: i,
 
-                transactions.push({
+    projectId:
+        transaction.projectId?.toString(),
 
-                    index: i,
+    transactionType:
+        transaction.transactionType,
 
-                    projectId:
-                        transaction.projectId
-                            ?.toString(),
+    amount:
+        transaction.amount?.toString(),
 
-                    transactionType:
-                        transaction.transactionType,
+    performedBy:
+        transaction.performedBy,
 
-                    amount:
-                        transaction.amount
-                            ?.toString(),
-
-                    performedBy:
-                        transaction.performedBy,
-
-                    timestamp:
-                        transaction.timestamp
-                            ?.toString()
-                });
+    timestamp:
+        transaction.timestamp?.toString()
+});
+     
             }
 
 
@@ -956,23 +952,30 @@ router.post(
             );
 
 
-            const receipt =
-                await tx.wait();
+           const receipt =
+    await tx.wait();
 
+// =================================================
+// SAVE BLOCKCHAIN TRANSACTION HASH
+// =================================================
 
-            // =================================================
-            // MONGODB
-            // =================================================
+if (!Array.isArray(project.allocationTransactionHashes)) {
+    project.allocationTransactionHashes = [];
+}
 
-            project.allocatedAmount =
-                Number(
-                    project.allocatedAmount || 0
-                ) +
-                allocationAmount;
+project.allocationTransactionHashes.push(tx.hash);
 
+// =================================================
+// MONGODB
+// =================================================
 
-            await project.save();
+project.allocatedAmount =
+    Number(
+        project.allocatedAmount || 0
+    ) +
+    allocationAmount;
 
+await project.save();
 
             return res.json({
 
@@ -1138,16 +1141,25 @@ router.post(
 
 
             const receipt =
-                await tx.wait();
+    await tx.wait();
 
+// =================================================
+// SAVE BLOCKCHAIN TRANSACTION HASH
+// =================================================
 
-            // =================================================
-            // MONGODB
-            // =================================================
+if (!Array.isArray(project.releaseTransactionHashes)) {
+    project.releaseTransactionHashes = [];
+}
 
-            project.releasedAmount =
-                released +
-                releaseAmount;
+project.releaseTransactionHashes.push(tx.hash);
+
+// =================================================
+// MONGODB
+// =================================================
+
+project.releasedAmount =
+    released +
+    releaseAmount;
 
 
             if (

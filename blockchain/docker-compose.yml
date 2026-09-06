@@ -1,0 +1,10 @@
+services:
+  hardhat:
+    build: .
+    container_name: government-fund-hardhat
+    ports:
+      - "8545:8545"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      

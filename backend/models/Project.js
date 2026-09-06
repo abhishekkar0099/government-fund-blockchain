@@ -76,9 +76,17 @@ const projectSchema = new mongoose.Schema(
          "FAILED"
        ],
         default: "PENDING"
-    }
+    },
         
-        
+        allocationTransactionHashes: {
+    type: [String],
+    default: []
+},
+
+releaseTransactionHashes: {
+    type: [String],
+    default: []
+}
     },
     {
         timestamps: true
