@@ -5,10 +5,9 @@ require("dotenv").config();
 
 const projectRoutes = require("./routes/projectRoutes");
 const authRoutes = require("./routes/authRoutes");
-const dashboardRoutes =require("./routes/dashboardRoutes");
+const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
-
 
 // ==========================================
 // MIDDLEWARE
@@ -23,7 +22,6 @@ app.use(
         extended: true
     })
 );
-
 
 // ==========================================
 // ROUTES
@@ -49,47 +47,34 @@ app.use(
 // ==========================================
 
 app.get("/", (req, res) => {
-
     res.json({
-        message:
-            "Government Fund Blockchain API is running!"
+        message: "Government Fund Blockchain API is running!",
+        status: "OK"
     });
-
 });
-
 
 // ==========================================
 // SERVER
 // ==========================================
 
-const PORT =
-    process.env.PORT || 5000;
-
+const PORT = process.env.PORT || 5000;
 
 mongoose
     .connect(process.env.MONGODB_URI)
-
     .then(() => {
-
-        console.log(
-            "MongoDB connected successfully"
-        );
+        console.log("MongoDB connected successfully");
 
         app.listen(
             PORT,
+            "0.0.0.0",
             () => {
-
                 console.log(
-                    `Server running on http://localhost:${PORT}`
+                    `Server running on port ${PORT}`
                 );
-
             }
         );
-
     })
-
     .catch((error) => {
-
         console.error(
             "MongoDB connection failed:"
         );
@@ -98,4 +83,5 @@ mongoose
             error.message
         );
 
+        process.exit(1);
     });
