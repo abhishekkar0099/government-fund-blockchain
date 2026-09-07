@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { QRCodeSVG } from "qrcode.react";
 import API from "../services/api";
 
 const CONTRACT_ADDRESS =
@@ -421,7 +420,6 @@ useEffect(() => {
 
     const blockchainConfirmed = project.blockchainStatus === "CONFIRMED";
     const blockchainTransactionHash = project.blockchainTransactionHash;
-    const verificationUrl = `${window.location.origin}/projects/${projectId}`;
 
     return (
         <div className="details-page">
@@ -662,13 +660,7 @@ useEffect(() => {
                     </div>
                 </div>
 
-                <div className="qr-verification">
-                    <div>
-                        <h4>Project Verification QR</h4>
-                        <p>Scan this QR code to open the public project page.</p>
-                    </div>
-                    <QRCodeSVG value={verificationUrl} size={150} level="H" />
-                </div>
+            
             </section>
 
             {/* =====================================================
